@@ -30,6 +30,10 @@ dependencies {
     implementation('com.h2database:h2')
     implementation('org.springframework.boot:spring-boot-starter-mustache')
     
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+    
+    implementation('org.springframework.session:spring-session-jdbc')
+    
     developmentOnly ('org.springframework.boot:spring-boot-devtools')
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
@@ -40,6 +44,8 @@ dependencies {
     testImplementation ('org.junit.jupiter:junit-jupiter-api:5.5.2') 
     testRuntimeOnly ('org.junit.jupiter:junit-jupiter-engine:5.5.2')
     
+    testImplementation("org.springframework.security:spring-security-test")
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 test {

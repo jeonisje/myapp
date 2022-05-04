@@ -27,7 +27,7 @@ var main = {
 		}).done(function(){
 			alert('The post has been registered.');
 			window.location.href = '/';
-		}).fail(function(){
+		}).fail(function(error){
 			alert(JSON.stringify(error));
 		});
 	},
@@ -48,7 +48,7 @@ var main = {
 		}).done(function(){
 			alert('The post has been modified.');
 			window.location.href = '/';
-		}).fail(function(){
+		}).fail(function(error){
 			alert(JSON.stringify(error));
 		});
 	},
@@ -63,7 +63,7 @@ var main = {
 		}).done(function(){
 			alert('The post has been deleted.');
 			window.location.href = '/';
-		}).fail(function(){
+		}).fail(function(error){
 			alert(JSON.stringify(error));
 		});
 	}
