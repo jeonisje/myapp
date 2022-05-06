@@ -59,5 +59,5 @@ tasks.withType(JavaCompile) {
 }
 
 processResources {
-	filteringCharser 'UTF-8'
+	filteringCharset 'UTF-8'
 }
