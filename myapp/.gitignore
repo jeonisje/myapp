@@ -16,3 +16,5 @@ application-oauth.properties
 
 bin
 bin/*
+scripts
+application-real-db.properties
